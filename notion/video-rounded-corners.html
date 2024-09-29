@@ -1,0 +1,9 @@
+<html>
+<body style="margin: 0; padding: 0">
+<video id="frame" crossorigin="anonymous" autoplay preload="auto" playsinline="playsinline" muted="muted" style="border-radius: 5px; width: 100%; height: 100%"></video>
+<script type="text/javascript">
+let src = new URL(window.location);
+document.getElementById("frame").src = src.searchParams.get("url");
+</script>
+</body>
+</html>
